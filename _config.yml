@@ -16,9 +16,9 @@
 title: Solomon Vishkautsan's Homepage
 email: wishcow@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-This is the personal website of Solomon Vishkautsan.
-I am a senior lecturer at Tel-Hai Academic College, Israel. 
-My research interests are Algebra and Number Theory. 
+  This is the personal website of Solomon Vishkautsan.
+  I am a senior lecturer at Tel-Hai Academic College, Israel. 
+  My research interests are Algebra and Number Theory. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://wishcow.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: wishcow
