@@ -1,0 +1,84 @@
+---
+layout: post
+title: Cycles of polynomials with integer coefficients
+date: 2016-05-25 11:29:51.000000000 +03:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags:
+- Arithmetic dynamics
+- good reduction
+- periodic points
+- polynomials
+meta:
+  _publicize_job_id: '23162332309'
+  geo_public: '0'
+  _edit_last: '580625'
+  _elasticsearch_data_sharing_indexed_on: '2024-11-18 14:11:37'
+author:
+  login: wishcow
+  email: wishcow@yahoo.com
+  display_name: wishcow
+  first_name: ''
+  last_name: ''
+permalink: "/2016/05/25/cycles-of-polynomials-with-integer-coefficients/"
+---
+<p><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd"><br />
+<html><body></p>
+<p>During work on the article <a href="https://arxiv.org/abs/1604.03965">``Scarcity of cycles for rational functions over a number field''</a>, Jung Kyu Canci and I proved as a corollary that a rational function $latex {\phi:\mathbb{P}^1\rightarrow\mathbb{P}^1}&amp;fg=000000$ defined over $latex {\mathbb{Q}}&amp;fg=000000$ with everywhere good reduction has at most $latex {d+5}&amp;fg=000000$ periodic points. As a special case, we remarked that a monic polynomial with integer coefficients has at most $latex {d+5}&amp;fg=000000$ $latex {\mathbb{Q}}&amp;fg=000000$-rational periodic points. It turns out that much better can be said, and that G. Baron proved in 1991 in an unpublished paper that such a polynomial has at most $latex {d+1}&amp;fg=000000$ periodic points, including the point at infinity. I decided to translate the article from the original German, and bring it the mathematical community's attention. I marked in <span style="color:#ff0000;">red</span> additions made by me. Any mistakes are probably due to my translation.<br />
+<!--more--></p>
+<h1 align="center">About integer polynomials with fixed points and two-cycles</h1>
+<h3 align="center">Gerd Baron</h3>
+<p><span style="color:#ff0000;">Let $latex {P(x)}&amp;fg=000000$ be an element in the polynomial ring $latex {R[x]}&amp;fg=000000$, where $latex {R}&amp;fg=000000$ is some commutative ring. For an element $latex {a\in{R}}&amp;fg=000000$ one can define a sequence $latex {\left&lt;a_k\right&gt;}&amp;fg=000000$ with $latex {a_1 = a}&amp;fg=000000$ and $latex {a_{n + 1} = P (a_n)}&amp;fg=000000$, for $latex {n\geq{2}}&amp;fg=000000$. A <em>cycle</em> is a finite sequence $latex {(a_1,...,a_n)}&amp;fg=000000$ such that $latex {P(a_i)=a_{i+1}}&amp;fg=000000$ for $latex {1\leq{i}\leq{n-1}}&amp;fg=000000$ and $latex {P(a_n)=a_1}&amp;fg=000000$. The <em>length</em> of a cycle $latex {(a_1,...,a_n)}&amp;fg=000000$ is $latex {n}&amp;fg=000000$. Over the ring $latex {R=\mathbb{Z}}&amp;fg=000000$ we say that a cycle $latex {(a_1,...,a_n)}&amp;fg=000000$ is <em>integral</em> if $latex {a_i\in\mathbb{Z}}&amp;fg=000000$ for any $latex {1\leq{i}\leq{n}}&amp;fg=000000$, and <em>rational</em> if $latex {a_i\in\mathbb{Q}}&amp;fg=000000$ for any $latex {1\leq{i}\leq{n}}&amp;fg=000000$.</span></p>
+<p>W. Narkiewicz has shown that a polynomial $latex {P(x) \in \mathbb{Z}[x]}&amp;fg=000000$ has no <span style="color:#ff0000;">[integral]</span> cycle of length more than two and conjectured also that <span style="color:#ff0000;">[integral]</span> cycles of length two can occur only if there is no fixed point. <span style="color:#ff0000;">[In particular, since monic polynomials in $latex {\mathbb{Z}[x]}&amp;fg=000000$ can only have integral cycles, one concludes that monic polynomials in $latex {\mathbb{Z}[x]}&amp;fg=000000$ have <em>rational</em> cycles of length at most $latex {2}&amp;fg=000000$.]</span></p>
+<p><span style="color:#ff0000;"><strong>Question:</strong> Does there exist a polynomial $latex {P(x) \in \mathbb{Z}[x]}&amp;fg=000000$, with a <span style="text-decoration:underline;">rational</span> cycle of length $latex {&gt;2}&amp;fg=000000$?</span></p>
+<p>For the sake of completeness, we give an overview of the proof of the result of Narkiewicz.</p>
+<p><b>Theorem 1</b> <em> Let $latex {P(x) \in \mathbb{Z}[x]}&amp;fg=000000$ and $latex {a \in \mathbb{Z}}&amp;fg=000000$, and define the sequence $latex {\left&lt;a_k\right&gt;}&amp;fg=000000$ with $latex {a_1 = a}&amp;fg=000000$ and $latex {a_{n + 1} = P (a_n)}&amp;fg=000000$. Then $latex {\left&lt;a_k\right&gt;}&amp;fg=000000$ is either (1) pairwise distinct, (2) eventually constant [i.e., $latex {a_n}&amp;fg=000000$ = $latex {a_m}&amp;fg=000000$ for all $latex {n&gt;m}&amp;fg=000000$, therefore, cycles of length 1, which are fixed points] or (3) finally alternating [i.e., $latex {a_{2m} \neq a_{2m + 1}}&amp;fg=000000$, $latex {a_{2n + 1} = a_{2m + 1}}&amp;fg=000000$, $latex {a_{2n}=a_{2m}}&amp;fg=000000$ for all $latex {n&gt; m}&amp;fg=000000$, i.e., two-cycles]. </em></p>
+<p><em>Proof:</em> $latex {a_{n+2} - a_{n+1} = P(a_{n + 1})-P(a_{n}) = (a_{n+1}-a_n)R_n}&amp;fg=000000$ with $latex {R_n\in\mathbb{Z}}&amp;fg=000000$. It follows by induction that $latex {a_{n + k + 1}-a_{n+k} = (a_{n + 1}-a_n)\prod{R_j}}&amp;fg=000000$, where the product runs over all $latex {j}&amp;fg=000000$ from $latex {n}&amp;fg=000000$ to $latex {n + k-1}&amp;fg=000000$.</p>
+<ol>
+<li>If $latex {a_n = a_{n + k}}&amp;fg=000000$ for a pair $latex {n,k}&amp;fg=000000$, then $latex {\langle{a_n}\rangle}&amp;fg=000000$ is eventually periodic.</li>
+<li>In the special case $latex {k = 1}&amp;fg=000000$ and $latex {a_{n+1} = a_n}&amp;fg=000000$ the sequence is eventually constant.</li>
+<li>If $latex {k&gt; 1}&amp;fg=000000$, then the following applies: $latex {a_{n+k+1}-a_{n + k} = a_{n+1}-a_n = a_{n+1}-a_n\prod{R_j}}&amp;fg=000000$ where $latex {a_{n + 1}-a_n\neq{0}}&amp;fg=000000$. So $latex {\prod R_j = 1}&amp;fg=000000$ and $latex {R_j = \pm 1}&amp;fg=000000$ for all relevant $latex {j}&amp;fg=000000$. If all $latex {R_j = 1}&amp;fg=000000$, then $latex {\sum (a_{n + j + 1} - a_{n+j}) = a_{n + k} - a_n = k(a_{n + 1}-a_n) = 0}&amp;fg=000000$, a contradiction. So a $latex {R_j = -1}&amp;fg=000000$ for some $latex {j}&amp;fg=000000$, and $latex {a_{j + 2} - a_{j+1} = -(a_{j + 1} - a_{j}) = a_j - a_{j+1}}&amp;fg=000000$, and therefore $latex {a_{j + 2} = a_j}&amp;fg=000000$ and thus $latex {k = 2}&amp;fg=000000$.</li>
+</ol>
+<p>$latex \Box&amp;fg=000000$</p>
+<p><b>Corollary 2</b> <em> A polynomial $latex {P(x) \in \mathbb{Z}[x]}&amp;fg=000000$ can only have <span style="color:#ff0000;">[integral]</span> cycles of length $latex {2}&amp;fg=000000$ (two-cycles) and $latex {1}&amp;fg=000000$ (fixed points). </em></p>
+<p>Next, we want to show that both can occur simultaneously and thus refute the conjecture by Narkiewicz.</p>
+<p><b>Theorem 3</b> <em> Let $latex {k, n}&amp;fg=000000$ be natural numbers with $latex {2k &lt;n}&amp;fg=000000$ and $latex {a_1, ..., a_k}&amp;fg=000000$ pairwise distinct positive integers and $latex {R(x) \in \mathbb{Z}[x]}&amp;fg=000000$ a (monic) polynomial. The (monic) polynomial $latex {P(x) = xR(x)\prod_{i=1}^k(x^2-a_i^2) -x}&amp;fg=000000$ has the fixed point $latex {0}&amp;fg=000000$, and the two-cycles $latex {(-a_i, a_i)}&amp;fg=000000$, $latex {i\in\{1,...,k\}}&amp;fg=000000$. </em></p>
+<p><b>Corollary 4</b> <em> For each $latex {k}&amp;fg=000000$ with $latex {2k &lt; n}&amp;fg=000000$ there are monic polynomials in $latex {\mathbb{Z}[x]}&amp;fg=000000$ of degree $latex {n}&amp;fg=000000$ with $latex {k}&amp;fg=000000$ two-cycles and a fixed point. </em></p>
+<p><b>Theorem 5</b> <em> Let $latex {k, n}&amp;fg=000000$ be natural numbers with $latex {k &lt; n}&amp;fg=000000$ and $latex {a_1, ..., a_k}&amp;fg=000000$ pairwise distinct integers other than zero and $latex {R(x) \in \mathbb{Z}[x]}&amp;fg=000000$ a (monic) polynomial. Then the (monic) polynomial $latex {P(x) = xR (x) \prod_{i=1}^k (x-a_i) + x}&amp;fg=000000$ has the fixed points $latex {0}&amp;fg=000000$ and $latex {a_i}&amp;fg=000000$, $latex {i\in\{1,...,k\}}&amp;fg=000000$. </em></p>
+<p><b>Corollary 6</b> <em> For each $latex {k \leq n}&amp;fg=000000$ there are monic polynomials in $latex {\mathbb{Z}[x]}&amp;fg=000000$ of degree $latex {n}&amp;fg=000000$ with $latex {k}&amp;fg=000000$ fixed points. </em></p>
+<p><b>Theorem 7</b> <em> If a polynomial $latex {P(x) \in \mathbb{Z}[x]}&amp;fg=000000$ has an <span style="color:#ff0000;">[integral]</span> two-cycle, then $latex {P(x)}&amp;fg=000000$ has at most one fixed point. </em></p>
+<p><em>Proof:</em> Proof by contradiction. If $latex {P(x)}&amp;fg=000000$ has the two-cycle $latex {(0, d)}&amp;fg=000000$ and two distinct fixed points $latex {a,b}&amp;fg=000000$ (in particular $latex {ab\neq{0}}&amp;fg=000000$). Since $latex {P (a) = a, P (b) = b}&amp;fg=000000$, the polynomial $latex {S(x) = P(x) -x}&amp;fg=000000$ satisfies $latex {S(a) = S(b) = 0}&amp;fg=000000$, and thus there exists a polynomial $latex {R(x)}&amp;fg=000000$ such that $latex {S (x) = R(x) (x-a) (x-b)}&amp;fg=000000$. Therefore $latex {P(x) = S(x) + x = R(x) (x-a) (x-b) + x}&amp;fg=000000$. From $latex {P(0) = d = R(0)ab}&amp;fg=000000$ it follows $latex {e = R (0) \neq 0, d = eab}&amp;fg=000000$ and because $latex {0=P(d) = R(d)(d-a)(d-b) + d}&amp;fg=000000$ also $latex {R(d)(eb-1)(ea-1) + e = 0}&amp;fg=000000$. From the division chain $latex {e | R(d) | e}&amp;fg=000000$ it therefore follows that $latex {ea-1 = \pm{1}}&amp;fg=000000$ and $latex {eb-1 = \pm 1}&amp;fg=000000$. Since $latex {ea\neq{0}}&amp;fg=000000$ and $latex {eb\neq{0}}&amp;fg=000000$ we get $latex {ea=eb=2}&amp;fg=000000$ contradicting $latex {a\neq{b}}&amp;fg=000000$. $latex \Box&amp;fg=000000$</p>
+<p><b>Theorem 8</b> <em> <a name="thm4"></a> If $latex {P(x) \in \mathbb{Z}[x]}&amp;fg=000000$ has two <span style="color:#ff0000;">[integral]</span> two-cycles $latex {(a, b)}&amp;fg=000000$ and $latex {(c, d)}&amp;fg=000000$, then $latex {a + b = c + d}&amp;fg=000000$. </em></p>
+<p><em>Proof:</em> Since $latex {P(a) = b}&amp;fg=000000$ and $latex {P(b) = a}&amp;fg=000000$ then the polynomial $latex {S(x) = P(x) + x - (a + b)}&amp;fg=000000$ satisfies $latex {S(a) = S(b) = 0}&amp;fg=000000$. Therefore there exists a polynomial $latex {R(x)}&amp;fg=000000$ such that $latex {S(x) = R(x)(x-a)(x-b)}&amp;fg=000000$. So $latex {P(x) = S(x) - x + a + b = R(x) (x-a) (x-b) - x + a + b}&amp;fg=000000$. The polynomial $latex {Q(x) = P (P (x))}&amp;fg=000000$ has the fixed points $latex {a, b, c, d}&amp;fg=000000$. Because of the shape of $latex {P(x)}&amp;fg=000000$, we get</p>
+<p>$latex Q(x) = R (P (x)) (P (x)-a) (P (x) -b) - P (x) + a + b = $<br />
+$latex = R (P (x)) (R (x) (x-a) (x-b) -x + b) (R(x) (x-a) (x-b) -x + a) $<br />
+$latex \quad -R(x) (x-a) (x-b) + x. $</p>
+<p>The polynomial $latex {Q_1 (x) = Q (x) -x}&amp;fg=000000$ has the roots $latex {a, b, c, d}&amp;fg=000000$. So $latex {Q_1 (x) = [R(P(x))(R(x)(x-a) -1)(R(x)(x-b) -1) -R (x)](x-a)(x-b)}&amp;fg=000000$. From $latex {Q_1 (c) = 0}&amp;fg=000000$ it follows that $latex {R(d)(R(c)(c-a) -1) (R(c) (c-b) -1) -R(c) = 0}&amp;fg=000000$ and from $latex {Q_1(d) = 0}&amp;fg=000000$ it follows that $latex {R(c)(R(d)(d-a) -1)(R(d)(d-b) -1)-R (d) = 0}&amp;fg=000000$. With $latex {A = (R(c) (c-a) -1) (R(c) (c-b) -1) (R (d) (d-a) -1) (R (d) (d-b) -1)}&amp;fg=000000$ we get $latex {R (d) (A-1) = R (c) (A-1) = 0}&amp;fg=000000$. Thus, either both $latex {R(d)}&amp;fg=000000$ and $latex {R(c)}&amp;fg=000000$ are $latex {0}&amp;fg=000000$, or $latex {A=1}&amp;fg=000000$. From $latex {R (c) = R (d) = 0}&amp;fg=000000$ follows $latex {P(c) = - c + a + b = d}&amp;fg=000000$, and thus $latex {a + b = c + d}&amp;fg=000000$ (remark that we only needed $latex {R(c)=0}&amp;fg=000000$). If $latex {A = 1}&amp;fg=000000$ we get $latex {R(c)(c-a) -1 =  1}&amp;fg=000000$, etc. From $latex {R(c)(c-a) -1 = R(c)(c-b) -1}&amp;fg=000000$ follows $latex {R(d)(d-a) -1 = R(d)(d-b) -1}&amp;fg=000000$ and $latex {R(c)(a-b) = R(d)(a-b) = 0}&amp;fg=000000$, so $latex {R(c) = R(d) = 0}&amp;fg=000000$, a contradiction (as before). From $latex {R(c)(c-a) -1 \neq R(c)(c-b) -1}&amp;fg=000000$ follows $latex {R (d) (d-a) -1 \neq R (d) (d-b) -1}&amp;fg=000000$ and therefore each one of two expressions equal to $latex {-1}&amp;fg=000000$. But it follows again that $latex {R (c) = R (d) = 0}&amp;fg=000000$, a contradiction. $latex \Box&amp;fg=000000$</p>
+<p><b>Corollary 9</b> <em> If $latex {P(x) \in \mathbb{Z}[x]}&amp;fg=000000$ has the <span style="color:#ff0000;">[integral]</span> two-cycles $latex {(a_i,b_i)}&amp;fg=000000$ ($latex {1\leq{i}\leq{k}}&amp;fg=000000$) with fixed $latex {c}&amp;fg=000000$ such that $latex {a_i + b_i = c}&amp;fg=000000$ for all $latex {1\leq{i}\leq{k}}&amp;fg=000000$, then $latex {P(x)}&amp;fg=000000$ is of the form $latex { P (x) = R(x) \prod (x-a_i) (x-b_i) -x + c}&amp;fg=000000$ where $latex {R(x) \in \mathbb{Z}[x]}&amp;fg=000000$. $latex {P(x)}&amp;fg=000000$ is monic iff $latex {R(x)}&amp;fg=000000$ is monic. </em></p>
+<p><b>Definition 10</b> <em> Two polynomials $latex {P(x), Q(x) \in \mathbb{Z}[x] }&amp;fg=000000$ are called <em>equivalent</em> <span style="color:#ff0000;">[(over $latex {\mathbb{Z}}&amp;fg=000000$)]</span> if there exists $latex {f\in\mathbb{Z}}&amp;fg=000000$, so that $latex {Q (x) = P (x + f) - f}&amp;fg=000000$. </em></p>
+<p><b>Corollary 11</b> <em> If $latex {c}&amp;fg=000000$ is even, i.e., $latex {(a_i + b_i) / 2 \in \mathbb{Z}[x]}&amp;fg=000000$, then $latex {P(x)}&amp;fg=000000$ is equivalent to $latex {R(x) \prod (x^2-\tilde{a}_i^2) -x}&amp;fg=000000$ with the cycles $latex {(-\tilde{a}_i, \tilde{a}_i)}&amp;fg=000000$, $latex {i\in\{1,...,k\}}&amp;fg=000000$. </em></p>
+<p><em>Proof:</em> Take $latex {f=c/2}&amp;fg=000000$. $latex \Box&amp;fg=000000$</p>
+<p><b>Theorem 12</b> <em> If $latex {P(x)}&amp;fg=000000$ has the <span style="color:#ff0000;">[integral]</span> two-cycle $latex {(a, b)}&amp;fg=000000$ and the fixed point $latex {e}&amp;fg=000000$, then $latex {2e = a + b}&amp;fg=000000$. </em></p>
+<p><em>Proof:</em> Analogous to the proof of Theorem~<a href="#thm4">8</a>. $latex \Box&amp;fg=000000$</p>
+<p><b>Corollary 13</b> <em> If $latex {P(x)}&amp;fg=000000$ has the <span style="color:#ff0000;">[integral]</span> two-cycle $latex {(a, b)}&amp;fg=000000$ with $latex {a + b}&amp;fg=000000$ odd, then $latex {P(x)}&amp;fg=000000$ has no <span style="color:#ff0000;">[integral]</span> fixed point. </em></p>
+<p>Exactly one of the following cases occurs: (where $latex {P(x)}&amp;fg=000000$ is monic exactly when $latex {R(x)}&amp;fg=000000$ is monic).</p>
+<ul>
+<li>Let $latex {P(x)}&amp;fg=000000$ have the fixed points $latex {a_i}&amp;fg=000000$, $latex {i\in\{1,...,k\}}&amp;fg=000000$, then $latex {P(x) = R(x) \prod (x-a_i) + x}&amp;fg=000000$. If $latex {k&gt;2}&amp;fg=000000$, then $latex {P(x)}&amp;fg=000000$ has no <span style="color:#ff0000;">[integral]</span> two-cycle.</li>
+<li>Let $latex {P(x)}&amp;fg=000000$ have the $latex {k}&amp;fg=000000$ <span style="color:#ff0000;">[integral]</span> two-cycles $latex {(a_i, b_i)}&amp;fg=000000$, $latex {i\in\{1,...,k\}}&amp;fg=000000$, then $latex {a_i + b_i = c}&amp;fg=000000$ (fixed) and $latex {P(x) = R(x) \prod (x-a_i) (x-b_i) -x + c}&amp;fg=000000$.
+<ul>
+<li>If $latex {c}&amp;fg=000000$ is even, then $latex {P(x)}&amp;fg=000000$ is equivalent to $latex {Q(x) = R(x) \prod (x^2-d_i^2) -x}&amp;fg=000000$ with the $latex {k}&amp;fg=000000$ two-cycles $latex {(-d_i, d_i)}&amp;fg=000000$, $latex {i\in\{1,...,k\}}&amp;fg=000000$.</li>
+<li>If $latex {c}&amp;fg=000000$ is odd, then $latex {P(x)}&amp;fg=000000$ is equivalent to $latex {Q(x) = R(x) \prod (x^2 + x-d_i^2+d_i) -x}&amp;fg=000000$ with the $latex {k}&amp;fg=000000$ two-cycles $latex {(-d_i + 1, d_i)}&amp;fg=000000$, $latex {i\in\{1,...,k\}}&amp;fg=000000$.</li>
+</ul>
+</li>
+<li>Let $latex {P(x)}&amp;fg=000000$ have a fixed point $latex {c\in\mathbb{Z}}&amp;fg=000000$ and $latex {k}&amp;fg=000000$ <span style="color:#ff0000;">[integral]</span> two-cycles $latex {(a_i, b_i)}&amp;fg=000000$,$latex {i\in\{1,...,k\}}&amp;fg=000000$, so that $latex {a_i + b_i = 2c}&amp;fg=000000$, for $latex {i\in\{1,...,k\}}&amp;fg=000000$, and $latex {P(x) = R(x)(x-c) \prod (x-a_i) (x-b_i) -x + 2c}&amp;fg=000000$.
+<ul>
+<li>$latex {P(x)}&amp;fg=000000$ is equivalent to $latex {Q(x) = [R(x) \prod (x^2-d_i^2) -1]x}&amp;fg=000000$ with the fixed point $latex {0}&amp;fg=000000$ and the $latex {k}&amp;fg=000000$ two-cycles $latex {(-di, di)}&amp;fg=000000$.</li>
+</ul>
+</li>
+</ul>
+<p><span style="color:#ff0000;"><b>Corollary 14</b> </span><em><span style="color:#ff0000;"> A polynomial $latex {P(x) \in \mathbb{Z}[x]}&amp;fg=000000$ of degree $latex {d}&amp;fg=000000$ has at most $latex {d}&amp;fg=000000$ integral periodic points. A monic polynomial $latex {P(x) \in \mathbb{Z}[x]}&amp;fg=000000$ of degree $latex {d}&amp;fg=000000$ has at most $latex {d}&amp;fg=000000$ rational periodic points.</span> </em><br />
+</body></html></p>
